@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROVIX — Luxury Streetwear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ROVIX</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <button onclick="openCart()">Cart (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <p class="small">EST. 2026</p>
+    <h1>WEAR<br><span>YOUR EDGE.</span></h1>
+    <p>Premium streetwear designed for the modern generation.</p>
+    <a href="#shop" class="shopBtn">SHOP NOW</a>
+  </div>
+</section>
+
+<section id="shop" class="shop">
+  <h2>COLLECTION</h2>
+  <div id="products" class="products"></div>
+</section>
+
+<section id="about" class="about">
+  <h2>ROVIX</h2>
+  <p>
+    ROVIX is a modern luxury streetwear brand focused on premium
+    designs, clean details and confident style.
+  </p>
+</section>
+
+<div id="cartModal" class="modal">
+  <div class="cartBox">
+    <button class="close" onclick="closeCart()">×</button>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    <button class="checkout" onclick="checkout()">PLACE ORDER</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
